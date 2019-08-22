@@ -37,7 +37,7 @@ namespace robotec_motor_driver {
                         break
                     case MotorDirection.Reverse:
                         pins.servoWritePin(AnalogPin.P14, 180);
-                        pins.servoWritePin(AnaloglPin.P15,0); 
+                        pins.servoWritePin(AnalogPin.P15,0); 
                         break
                 }   
      }
