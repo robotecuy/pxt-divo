@@ -1,7 +1,7 @@
 /**
  * Blocks for driving the Robotec Divo Board
  */
-//% weight=100 color=#00A654 icon="\uf21c" block="Motor Driver"
+//% weight=100 color=#00A654 icon="\uf21c" block="Motores Divo"
 namespace robotec_motor_driver {
 	/************************************************************************************************************************************************
 	* micro:bit motor driver blocks 
