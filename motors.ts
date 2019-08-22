@@ -20,13 +20,10 @@ namespace robotec_motor_driver {
      * Turns on motor specified by eMotors in the direction specified
      * by eDirection, at the requested speed 
      *
-	 * @param motor which motor to turn on
 	 * @param dir   which direction to go
-	 * @param speed how fast to spin the motor
      */
     //% blockId=kitronik_motordriver_motor_on
     //% block="%motor|on direction %dir|speed %speed"
-    //% speed.min=0 speed.max=100
     export function motorOn(dir: MotorDirection): void {
         /*first convert 0-100 to 0-1024 (approx) We wont worry about the lsat 24 to make life simpler*/
 
