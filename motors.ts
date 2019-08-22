@@ -12,8 +12,12 @@ namespace robotec_motor_driver {
         Forward,
         //% block="reverse"
         Reverse,
+	//% block="right"
         Right,
-        Left
+	//% block="left"
+        Left,
+	//% block="stop"
+        Stop  
     }
 
 	/**
@@ -35,6 +39,18 @@ namespace robotec_motor_driver {
                     case MotorDirection.Reverse:
                         pins.servoWritePin(AnalogPin.P14, 180);
                         pins.servoWritePin(AnalogPin.P15,0); 
+                        break
+		     case MotorDirection.Right:
+                        pins.servoWritePin(AnalogPin.P14, 90);
+                        pins.servoWritePin(AnalogPin.P15,180); 
+                        break
+		     case MotorDirection.Left:
+                        pins.servoWritePin(AnalogPin.P14, 0);
+                        pins.servoWritePin(AnalogPin.P15,90); 
+                        break
+		     case MotorDirection.Stop:
+                        pins.servoWritePin(AnalogPin.P14,90);
+                        pins.servoWritePin(AnalogPin.P15,90); 
                         break
                 }   
      }
