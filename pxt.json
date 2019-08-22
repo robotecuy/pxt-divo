@@ -1,0 +1,14 @@
+{
+    "name": "pxt-divo",
+    "version": "0.0.6",
+    "description": "Blocks to simplify using Robotec products in PXT",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "motors.ts"
+    ],
+    "public": true
+}
