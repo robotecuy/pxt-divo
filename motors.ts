@@ -32,12 +32,12 @@ namespace robotec_motor_driver {
 
                 switch (dir) {
                     case MotorDirection.Forward:
-                        pins.servoWritePin(DigitalPin.P14, 0);
-                        pins.servoWritePin(DigitalPin.P15,180); 
+                        pins.servoWritePin(AnalogPin.P14, 0);
+                        pins.servoWritePin(AnalogPin.P15,180); 
                         break
                     case MotorDirection.Reverse:
-                        pins.servoWritePin(DigitalPin.P14, 180);
-                        pins.servoWritePin(DigitalPin.P15,0); 
+                        pins.servoWritePin(AnalogPin.P14, 180);
+                        pins.servoWritePin(AnaloglPin.P15,0); 
                         break
                 }   
      }
