@@ -23,7 +23,7 @@ namespace robotec_motor_driver {
 	 * @param dir   which direction to go
      */
     //% blockId=kitronik_motordriver_motor_on
-    //% block="%motor|on direction %dir|speed %speed"
+    //% block="divo direction %dir"
     export function motorOn(dir: MotorDirection): void {
         /*first convert 0-100 to 0-1024 (approx) We wont worry about the lsat 24 to make life simpler*/
 
